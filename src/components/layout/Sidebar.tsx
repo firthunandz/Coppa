@@ -33,7 +33,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, setPage }) => {
             }}
           >
             <img 
-              src="/Coppa/images/coppalogo.png" 
+              src="/Coppa/images/nobglogo.png" 
               alt="Coppa" 
               className="w-full h-full object-contain"
             />
@@ -136,7 +136,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, setPage }) => {
             }}
           >
             <img 
-              src="/Coppa/images/coppalogo.png" 
+              src="/Coppa/images/nobglogo.png" 
               alt="Coppa" 
               className="w-full h-full object-contain"
             />
