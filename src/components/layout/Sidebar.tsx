@@ -1,5 +1,5 @@
 import React from 'react'
-import { Calendar, CheckCircle2, ListTodo, LayoutGrid, ShoppingCart, BarChart2, Settings as SettingsIcon } from 'lucide-react'
+import { Calendar, ListTodo, LayoutGrid, ShoppingCart, BarChart2, Settings as SettingsIcon } from 'lucide-react'
 
 export type Page = 'today' | 'habits' | 'tasks' | 'shopping' | 'stats' | 'settings'
 
@@ -25,8 +25,25 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, setPage }) => {
       {/* Desktop Sidebar */}
       <aside className="hidden md:flex flex-col w-64 h-screen bg-bg-secondary border-r border-border p-6 fixed left-0 top-0">
         <div className="flex items-center gap-2 mb-10 px-2">
-          <img src="/Coppa/coppalogo.png" alt="Coppa" className="w-7 h-7 object-contain" />
-          <h1 className="text-2xl font-display font-bold text-text-primary tracking-tight">Coppa</h1>
+          <div 
+            className="w-8 h-8 rounded-xl flex items-center justify-center p-1 border"
+            style={{ 
+              backgroundColor: 'color-mix(in srgb, var(--color-accent), transparent 85%)',
+              borderColor: 'var(--color-accent)' 
+            }}
+          >
+            <img 
+              src="/Coppa/images/coppalogo.png" 
+              alt="Coppa" 
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <span 
+            className="text-xl font-display font-bold"
+            style={{ color: 'var(--color-accent)' }}
+          >
+            Coppa
+          </span>
         </div>
         
         <nav className="flex-1 space-y-2">
@@ -111,7 +128,19 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, setPage }) => {
       {/* Mobile Header with Settings and Stats icons */}
       <div className="md:hidden fixed top-0 left-0 right-0 p-4 flex items-center justify-between z-40">
         <div className="flex items-center gap-2">
-          <img src="/Coppa/coppalogo.png" alt="Coppa" className="w-8 h-8 object-contain" />
+          <div 
+            className="w-8 h-8 rounded-xl flex items-center justify-center p-1 border"
+            style={{ 
+              backgroundColor: 'color-mix(in srgb, var(--color-accent), transparent 85%)',
+              borderColor: 'var(--color-accent)' 
+            }}
+          >
+            <img 
+              src="/Coppa/images/coppalogo.png" 
+              alt="Coppa" 
+              className="w-full h-full object-contain"
+            />
+          </div>
         </div>
         <div className="flex items-center gap-2">
           <button 
