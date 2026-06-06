@@ -25,9 +25,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, setPage }) => {
       {/* Desktop Sidebar */}
       <aside className="hidden md:flex flex-col w-64 h-screen bg-bg-secondary border-r border-border p-6 fixed left-0 top-0">
         <div className="flex items-center gap-2 mb-10 px-2">
-          <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-            <CheckCircle2 className="w-5 h-5 text-white" />
-          </div>
+          <img src="/Coppa/coppalogo.png" alt="Coppa" className="w-7 h-7 object-contain" />
           <h1 className="text-2xl font-display font-bold text-text-primary tracking-tight">Coppa</h1>
         </div>
         
@@ -113,9 +111,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentPage, setPage }) => {
       {/* Mobile Header with Settings and Stats icons */}
       <div className="md:hidden fixed top-0 left-0 right-0 p-4 flex items-center justify-between z-40">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-            <CheckCircle2 className="w-5 h-5 text-white" />
-          </div>
+          <img src="/Coppa/coppalogo.png" alt="Coppa" className="w-8 h-8 object-contain" />
         </div>
         <div className="flex items-center gap-2">
           <button 
